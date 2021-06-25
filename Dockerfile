@@ -5,9 +5,9 @@ LABEL "company"="Ninjaneers GmbH"
 
 RUN  apk update && apk add unzip
 
-ADD https://ec.europa.eu/cefdigital/artifact/repository/esignaturedss/eu/europa/ec/joinup/sd-dss/dss-demo-bundle/5.5/dss-demo-bundle-5.5.zip /tmp
-RUN unzip /tmp/dss-demo-bundle-5.5.zip -d /tmp
-RUN mv /tmp/dss-demo-bundle-5.5 /dss
+ADD https://ec.europa.eu/cefdigital/artifact/repository/esignaturedss/eu/europa/ec/joinup/sd-dss/dss-demo-bundle/5.8.2/dss-demo-bundle-5.8.2.zip /tmp
+RUN unzip /tmp/dss-demo-bundle-5.8.2.zip -d /tmp
+RUN mv /tmp/dss-demo-bundle-5.8.2 /dss
 
 RUN chmod +x /dss/apache-tomcat-8.5.45/bin/catalina.sh
 
